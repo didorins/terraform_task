@@ -3,7 +3,7 @@
 # ALB DNS endpoint (http / :80)
 output "elb_dns_name" {
   description = "Load balancer DNS endpoint"
-  value       = aws_lb.app-lb.dns_name
+  value       = "http://${aws_lb.app-lb.dns_name}"
 }
 
 # EFS endpoint
@@ -15,5 +15,5 @@ output "efs-id" {
 # DB endpoint
  output "db-endpoint"{
 description = "Connect to DB instance using this string. Grab PW from Parameter Store"
-value = "mysql -h ${aws_db_instance.rds.endpoint} -P 3306 -u ${aws_db_instance.rds.username} -p"
+value = "mysql -h ${aws_db_instance.rds.address} -P 3306 -u ${aws_db_instance.rds.username} -p"
 }
