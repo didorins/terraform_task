@@ -1,7 +1,8 @@
 # Introduction
 
 This repository contains code written in HCL for Terraform architecture deployment automation on 
-Amazon Web Services <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/800px-Amazon_Web_Services_Logo.svg.png" width="40">. Down below are instructions to install & setup.  High level diagram of architecture 
+
+Amazon Web Services <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/800px-Amazon_Web_Services_Logo.svg.png" width="40">.   Down below are instructions to install & setup.  High level diagram of architecture 
 
 
 ![](/architecture-diagram.png)
