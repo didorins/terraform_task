@@ -1,6 +1,7 @@
 **/.terraform/*
 mynew_key*
 terraform.lock*
+.terraform.lock.*
 *.tfstate
 *.tfstate.*
 *.tfvars
