@@ -12,8 +12,8 @@ output "efs-id" {
   value       = aws_efs_file_system.efs.id
 }
 
-# # DB endpoint
-#  output "db-endpoint"{
-# description = "Connect to DB instance using this string. Grab PW from Parameter Store"
-# value = "mysql -h ${aws_db_instance.rds.endpoint} -P 3306 -u ${aws_db_instance.rds.username} -p"
-# }
+# DB endpoint
+ output "db-endpoint"{
+description = "Connect to DB instance using this string. Grab PW from Parameter Store"
+value = "mysql -h ${aws_db_instance.rds.endpoint} -P 3306 -u ${aws_db_instance.rds.username} -p"
+}
