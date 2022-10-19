@@ -88,5 +88,6 @@ terraform init
 terraform plan
 terraform apply
 ```
+## Deployment
 
 This will initialize working directory, automatically download source module based on referred resources, initialize backend, do a 'dry-run' of planned architecture and then translate the code to .json format inside State file, which is used to pass to provider's APIs for resource creation.
