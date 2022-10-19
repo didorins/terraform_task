@@ -79,7 +79,9 @@ Inside variables.tf you will find variable definitions. You can change the defau
 | Database username | rds-username | dido | 
 | Database instance class | db2_instance_class | db.t2.micro | 
 
+By default backend is hardcoded to use a bucket called "exercisebucketdido", which I had to provision manually before starting. If you prefer to store your state file locally, please comment everything in backend.tf, or manually provision a bucket and map its name. 
 
+Update: This block has been commented out to avoid any issues when you first pass the configuration for deployment.
 
 Once you have the code on your system and adjusted the variables, navigate to code's directory and run:
 
@@ -87,6 +89,12 @@ Once you have the code on your system and adjusted the variables, navigate to co
 terraform init
 terraform plan
 terraform apply
+```
+
+When done, do not forget to scrap the environment to avoid unnecessary charges to your account
+
+```sh
+terraform destroy
 ```
 ## Deployment
 
