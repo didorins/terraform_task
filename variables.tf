@@ -49,7 +49,7 @@ variable "prefix" {
 
 variable "your-ip" {
   description = "Whitelist CIDR block for EC2 SSH"
-  default = "130.204.133.250"
+  default = "0.0.0.0/0"
 }
 
 variable "rds-username" {
